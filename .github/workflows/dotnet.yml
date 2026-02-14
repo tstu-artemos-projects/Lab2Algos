@@ -21,11 +21,14 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
 
-    - name: Publish WinForms App
-      run: dotnet publish Lab2.csproj -c Release -o ./publish
+    - name: Build
+      run: dotnet build Lab2.Tests/Lab2.Tests.csproj --no-restore
 
     - name: Test
       run: dotnet test Lab2.Tests/Lab2.Tests.csproj --configuration Release --no-build --verbosity normal
+
+    - name: Publish WinForms App
+      run: dotnet publish Lab2.csproj -c Release -o ./publish
 
     - name: Zip Artifact
       shell: pwsh
