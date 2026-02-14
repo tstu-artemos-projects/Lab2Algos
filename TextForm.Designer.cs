@@ -91,15 +91,15 @@ namespace Lab2
             // Позиционирование элементов статистики справа
             int statsLeft = 550;
 
-            this.analizeLabel.Text = "Введите текст для рассчёта количества букв, слов, предложений";
+            this.analizeLabel.Text = "Введите текст для рассчёта количества букв,\n\rслов, предложений";
             this.analizeLabel.Location = new(statsLeft, 20);
             this.analizeLabel.AutoSize = true;
             this.analizeLabel.Name = "analizeLabel";
 
-            SetupStatControl(charCountLabel, charCountTextBox, "Символов:", statsLeft, 40, "charCountTextBox");
-            SetupStatControl(wordCountLabel, wordCountTextBox, "Слов:", statsLeft, 100, "wordCountTextBox");
-            SetupStatControl(sentenceCountLabel, sentenceCountTextBox, "Предложений:", statsLeft, 160, "sentenceCountTextBox");
-            SetupStatControl(charTopLabel, charTopTextBox, "Топ 5 букв:", statsLeft, 220, "charTopTextBox");
+            SetupStatControl(charCountLabel, charCountTextBox, "Символов:", statsLeft, 80, "charCountTextBox");
+            SetupStatControl(wordCountLabel, wordCountTextBox, "Слов:", statsLeft, 140, "wordCountTextBox");
+            SetupStatControl(sentenceCountLabel, sentenceCountTextBox, "Предложений:", statsLeft, 200, "sentenceCountTextBox");
+            SetupStatControl(charTopLabel, charTopTextBox, "Топ 5 букв:", statsLeft, 260, "charTopTextBox");
 
             this.charTopTextBox.Multiline = true;
             this.charTopTextBox.Size = new(150, 23 * 5 - 7 * 4);
