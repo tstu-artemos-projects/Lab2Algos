@@ -85,13 +85,14 @@ namespace Lab2
             this.textAnalizeTextBox.ScrollBars = ScrollBars.Vertical;
             this.textAnalizeTextBox.Location = new (20, 20);
             this.textAnalizeTextBox.Size = new (500, 350);
+            this.textAnalizeTextBox.Name = "textAnalizeTextBox";
 
             // Позиционирование элементов статистики справа
             int statsLeft = 550;
-            SetupStatControl(charCountLabel, charCountTextBox, "Символов:", statsLeft, 20);
-            SetupStatControl(wordCountLabel, wordCountTextBox, "Слов:", statsLeft, 80);
-            SetupStatControl(sentenceCountLabel, sentenceCountTextBox, "Предложений:", statsLeft, 140);
-            SetupStatControl(charTopLabel, charTopTextBox, "Топ 5 букв:", statsLeft, 200);
+            SetupStatControl(charCountLabel, charCountTextBox, "Символов:", statsLeft, 20, "charCountTextBox");
+            SetupStatControl(wordCountLabel, wordCountTextBox, "Слов:", statsLeft, 80, "wordCountTextBox");
+            SetupStatControl(sentenceCountLabel, sentenceCountTextBox, "Предложений:", statsLeft, 140, "sentenceCountTextBox");
+            SetupStatControl(charTopLabel, charTopTextBox, "Топ 5 букв:", statsLeft, 200, "charTopTextBox");
 
             this.charTopTextBox.Multiline = true;
             this.charTopTextBox.Size = new(150, 23 * 5 - 7 * 4);
@@ -101,6 +102,7 @@ namespace Lab2
             this.analizeButton.Location = new (20, 380);
             this.analizeButton.Size = new (150, 40);
             this.analizeButton.Click += this.Analize;
+            this.analizeButton.Name = "analizeButton";
 
             // Добавление на страницу
             this.textAnalizePage.Controls.AddRange(new System.Windows.Forms.Control[] {
@@ -110,7 +112,7 @@ namespace Lab2
             });
         }
 
-        private void SetupStatControl(Label lbl, TextBox txt, string title, int x, int y)
+        private void SetupStatControl(Label lbl, TextBox txt, string title, int x, int y, string? name)
         {
             lbl.Text = title;
             lbl.Location = new (x, y);
@@ -118,6 +120,7 @@ namespace Lab2
 
             txt.Location = new (x, y + 20);
             txt.Size = new (150, 23);
+            txt.Name = name ?? title.Replace(" ", "") + "TextBox";
             txt.ReadOnly = true;
         }
 
