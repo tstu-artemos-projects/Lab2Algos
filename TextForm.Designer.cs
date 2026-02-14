@@ -52,6 +52,9 @@ namespace Lab2
             this.textAnalizePage.PerformLayout();
             this.histogramPage.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.histogramPictureBox)).EndInit();
+
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.ResumeLayout(false);
         }
 
