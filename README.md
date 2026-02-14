@@ -1,5 +1,6 @@
-# Лабораторная работа №2 по дисциплине "Алгоритмы и программирование"
 <div align="center">
+
+# Лабораторная работа №2 по дисциплине "Алгоритмы и программирование"
 
 ![GitHub License](https://img.shields.io/github/license/tstu-artemos-projects/Lab2Algos?style=for-the-badge&logo=gplv3&logoColor=FFFFFF)
 ![GitHub repo size](https://img.shields.io/github/repo-size/tstu-artemos-projects/Lab2Algos?style=for-the-badge&logo=github&logoColor=FFFFFF)
@@ -57,9 +58,9 @@ Lab2Algos/
 ```
 
 ## 🚀 Установка и запуск
-1. Клонируйте репозиторий:
+1. Клонируйте репозиторий в какую то директорию:
 	```bash
-	git clone
+	git clone https://github.com/tstu-artemos-projects/Lab2Algos.git # или git@github.com:tstu-artemos-projects/Lab2Algos.git
 	```
 2. Откройте `Lab2Algos.sln` в Visual Studio.
 3. Постройте и запустите проект (F5).
