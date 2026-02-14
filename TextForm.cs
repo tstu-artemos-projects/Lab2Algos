@@ -10,6 +10,11 @@ namespace Lab2
         public void Analize(object sender, EventArgs e)
         {
             string text = this.textAnalizeTextBox.Text;
+            if (text.Trim().Length == 0)
+            {
+                MessageBox.Show("Пожалуйста, введите текст для анализа.", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             var (chars, words, sentences) = TextClass.Count(text);
             this.charCountTextBox.Text = chars.ToString();
             this.wordCountTextBox.Text = words.ToString();
