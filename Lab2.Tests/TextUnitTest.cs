@@ -1,6 +1,5 @@
 ﻿using Xunit;
 using Lab2;
-using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace Lab2.Tests
