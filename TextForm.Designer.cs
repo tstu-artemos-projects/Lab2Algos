@@ -69,6 +69,7 @@ namespace Lab2
             this.wordCountTextBox = new ();
             this.sentenceCountTextBox = new ();
             this.charTopTextBox = new ();
+            this.analizeLabel = new ();
 
             // Подписи
             this.charCountLabel = new ();
@@ -77,7 +78,7 @@ namespace Lab2
             this.charTopLabel = new ();
 
             // Настройка страницы
-            this.textAnalizePage.Text = "Статистика и Анализ";
+            this.textAnalizePage.Text = "Ввод, Статистика и Анализ";
             this.textAnalizePage.Padding = new (10);
 
             // Главное поле ввода
@@ -89,10 +90,16 @@ namespace Lab2
 
             // Позиционирование элементов статистики справа
             int statsLeft = 550;
-            SetupStatControl(charCountLabel, charCountTextBox, "Символов:", statsLeft, 20, "charCountTextBox");
-            SetupStatControl(wordCountLabel, wordCountTextBox, "Слов:", statsLeft, 80, "wordCountTextBox");
-            SetupStatControl(sentenceCountLabel, sentenceCountTextBox, "Предложений:", statsLeft, 140, "sentenceCountTextBox");
-            SetupStatControl(charTopLabel, charTopTextBox, "Топ 5 букв:", statsLeft, 200, "charTopTextBox");
+
+            this.analizeLabel.Text = "Введите текст для рассчёта количества букв, слов, предложений";
+            this.analizeLabel.Location = new(statsLeft, 20);
+            this.analizeLabel.AutoSize = true;
+            this.analizeLabel.Name = "analizeLabel";
+
+            SetupStatControl(charCountLabel, charCountTextBox, "Символов:", statsLeft, 40, "charCountTextBox");
+            SetupStatControl(wordCountLabel, wordCountTextBox, "Слов:", statsLeft, 100, "wordCountTextBox");
+            SetupStatControl(sentenceCountLabel, sentenceCountTextBox, "Предложений:", statsLeft, 160, "sentenceCountTextBox");
+            SetupStatControl(charTopLabel, charTopTextBox, "Топ 5 букв:", statsLeft, 220, "charTopTextBox");
 
             this.charTopTextBox.Multiline = true;
             this.charTopTextBox.Size = new(150, 23 * 5 - 7 * 4);
@@ -105,10 +112,10 @@ namespace Lab2
             this.analizeButton.Name = "analizeButton";
 
             // Добавление на страницу
-            this.textAnalizePage.Controls.AddRange(new System.Windows.Forms.Control[] {
+            this.textAnalizePage.Controls.AddRange(new Control[] {
                 textAnalizeTextBox, analizeButton, charCountLabel, charCountTextBox,
                 wordCountLabel, wordCountTextBox, sentenceCountLabel, sentenceCountTextBox,
-                charTopTextBox, charTopLabel
+                charTopTextBox, charTopLabel, analizeLabel
             });
         }
 
