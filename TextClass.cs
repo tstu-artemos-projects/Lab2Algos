@@ -21,8 +21,9 @@ namespace Lab2
         public static (int,int,int) Count(string text)
         {
             string cleanedText = text.Trim();
-            string[] wordArray = cleanedText.Split(new char[] { ' ', '\n', '\t' }, StringSplitOptions.RemoveEmptyEntries);
             string[] sentenceArray = cleanedText.Split(new char[] { '.', '!', '?' }, StringSplitOptions.RemoveEmptyEntries);
+            string[] wordArray = cleanedText.Split(new char[] { ' ', '\n', '\t', '\r' }, StringSplitOptions.RemoveEmptyEntries);
+
 
             int chars = 0;
             int words = 0;
