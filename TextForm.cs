@@ -12,7 +12,11 @@ namespace Lab2
             string text = this.textAnalizeTextBox.Text;
             if (text.Trim().Length == 0)
             {
-                MessageBox.Show("Пожалуйста, введите текст для анализа.", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                this.charCountTextBox.Text = "0";
+                this.wordCountTextBox.Text = "0";
+                this.sentenceCountTextBox.Text = "0";
+                if (Application.OpenForms.Count > 0)
+                    MessageBox.Show("Пожалуйста, введите текст для анализа.", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             var (chars, words, sentences) = TextClass.Count(text);
