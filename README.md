@@ -8,7 +8,7 @@
 ![GitHub branch status](https://img.shields.io/github/check-runs/tstu-artemos-projects/Lab2Algos/master?style=for-the-badge&logo=githubactions&logoColor=FFFFFF)
 ![Last Commit](https://img.shields.io/github/last-commit/tstu-artemos-projects/Lab2Algos?style=for-the-badge&logo=git&logoColor=FFFFFF)  
 
-
+</div>
 
 ## 📖 Обзор проекта
 Приложение предназначено для комплексного статистического анализа текста и визуализации частотности символов. Программа предоставляет графический интерфейс для работы с текстовыми данными, вычисляя метрики структуры и популярности букв латинского алфавита.
