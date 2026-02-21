@@ -8,6 +8,9 @@ namespace Lab2
     {
         public static string Alpha = "abcdefghijklmnopqrstuvwxyz";
 
+        private static readonly char[] SentenceDelimiters = ['.', '!', '?'];
+        private static readonly char[] WordDelimiters = [' ', '\n', '\t', '\r'];
+
         /// <summary>
         /// Вычисляет количество символов, слов и предложений в указанном тексте.
         /// </summary>
@@ -21,8 +24,8 @@ namespace Lab2
         public static (int,int,int) Count(string text)
         {
             string cleanedText = text.Trim();
-            string[] sentenceArray = cleanedText.Split(new char[] { '.', '!', '?' }, StringSplitOptions.RemoveEmptyEntries);
-            string[] wordArray = cleanedText.Split(new char[] { ' ', '\n', '\t', '\r' }, StringSplitOptions.RemoveEmptyEntries);
+            string[] sentenceArray = cleanedText.Split(SentenceDelimiters, StringSplitOptions.RemoveEmptyEntries);
+            string[] wordArray = cleanedText.Split(WordDelimiters, StringSplitOptions.RemoveEmptyEntries);
 
 
             int chars = 0;
@@ -49,7 +52,7 @@ namespace Lab2
         public static Dictionary<string, int> CharStats(string text) {
             Dictionary<string, int> dict = new();
 
-            var cleanedText = text.Replace(" ", "").Replace("\n", "").Replace("\t", "");
+            var cleanedText = text.Replace(" ", "").Replace("\n", "").Replace("\t", "").Replace("\r", "");
 
             foreach (char c in cleanedText) {
                 string key = c.ToString();
