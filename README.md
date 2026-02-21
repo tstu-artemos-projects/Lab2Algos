@@ -8,7 +8,7 @@
 ![GitHub branch status](https://img.shields.io/github/check-runs/tstu-artemos-projects/Lab2Algos/master?style=for-the-badge&logo=githubactions&logoColor=FFFFFF)
 ![Last Commit](https://img.shields.io/github/last-commit/tstu-artemos-projects/Lab2Algos?style=for-the-badge&logo=git&logoColor=FFFFFF)  
 
-</div>
+
 
 ## 📖 Обзор проекта
 Приложение предназначено для комплексного статистического анализа текста и визуализации частотности символов. Программа предоставляет графический интерфейс для работы с текстовыми данными, вычисляя метрики структуры и популярности букв латинского алфавита.
@@ -25,7 +25,11 @@
 - Графика: `System.Drawing` (использование `Graphics`, `Bitmap` и `Brushes`)
 
 ## 📂 Структура проекта блок-схемой
+<div align="center">
+	
 [![](https://mermaid.ink/img/pako:eNp9lM1u00AQx19ltcrBUdMozUeT7AEpHyA4VIrUSEhgDlt7ay-yd6P1mqaNUqntgQPc4TF6oKICRF_BfiNm7ThZqoIlOzPj3392Z2adFfakzzDBXkSTZMppoGjsCgRXEUEzJU0IrcqgufaOKBdOvVZG1q6w-Tlb6hdS_SXY1_RkIoVWMjpABM23no2AbiRoxC-YSTGWS0OWloWFPNHFhmbc06liJbdzLJSW2cap1lIAVBpWGdVWnboV3OzBSZjwmSJInrxnnm4gRtDzD0zokQoSi99_JbjmhWQi44UUgDhPv5_vKpzRgP2Derkt0GKe6PGksOypjKJFSKHORCsugpqV_Rg2xYTHpiziMddMJYB5IVVv39nYa6n8_yN7E5lCfWZW1Tr1GnK4gAZVD7uZE0hwrKlOHkumMDAuBVXnl2WskF5a0qmiZ0bKPeeM-zok5QIh40GoN45PNSVWLkg85jqmi0ddq85ws_lsdz4Jyr5kt9lDfpNfZT_AusuvS3yLVHzZaxB8BfQh-539zD9n3_MbI0H5VX6d3cJ9n3-EgMl1n92h7Jd5C-y3_BNu4EBxHxOtUtbAMVMxNS4uxudiHbKYuZiA6bNTmkbaxa5Yg2xBxRsp40qpZBqElZMuoH62-WQxOaVRYpDi3BZzwqQ3LFJgssJLTLqtw-aw1z3st9u99rDTGfQa-BygQbPb6fdaB61Bpzfo9tvrBr4oFm01B31gmM-1VEeb_wnzs_4DKedtOg?type=png)](https://mermaid.live/edit#pako:eNp9lM1u00AQx19ltcrBUdMozUeT7AEpHyA4VIrUSEhgDlt7ay-yd6P1mqaNUqntgQPc4TF6oKICRF_BfiNm7ThZqoIlOzPj3392Z2adFfakzzDBXkSTZMppoGjsCgRXEUEzJU0IrcqgufaOKBdOvVZG1q6w-Tlb6hdS_SXY1_RkIoVWMjpABM23no2AbiRoxC-YSTGWS0OWloWFPNHFhmbc06liJbdzLJSW2cap1lIAVBpWGdVWnboV3OzBSZjwmSJInrxnnm4gRtDzD0zokQoSi99_JbjmhWQi44UUgDhPv5_vKpzRgP2Derkt0GKe6PGksOypjKJFSKHORCsugpqV_Rg2xYTHpiziMddMJYB5IVVv39nYa6n8_yN7E5lCfWZW1Tr1GnK4gAZVD7uZE0hwrKlOHkumMDAuBVXnl2WskF5a0qmiZ0bKPeeM-zok5QIh40GoN45PNSVWLkg85jqmi0ddq85ws_lsdz4Jyr5kt9lDfpNfZT_AusuvS3yLVHzZaxB8BfQh-539zD9n3_MbI0H5VX6d3cJ9n3-EgMl1n92h7Jd5C-y3_BNu4EBxHxOtUtbAMVMxNS4uxudiHbKYuZiA6bNTmkbaxa5Yg2xBxRsp40qpZBqElZMuoH62-WQxOaVRYpDi3BZzwqQ3LFJgssJLTLqtw-aw1z3st9u99rDTGfQa-BygQbPb6fdaB61Bpzfo9tvrBr4oFm01B31gmM-1VEeb_wnzs_4DKedtOg)
+
+</div>
 
 ## 🏗 Архитектура проекта
 Проект разделен на логические модули для разделения интерфейса и бизнес-логики:
